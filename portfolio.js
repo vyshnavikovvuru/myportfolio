@@ -40,3 +40,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+window.addEventListener('load', () => {
+    fadeInSection();
+    fillSkillBars(); // Also animate skill bars on page load
+});
