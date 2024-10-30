@@ -1,0 +1,234 @@
+/* Existing styles remain unchanged */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7FFF7;
+    color: #1A535C;
+    line-height: 1.6;
+    /* background-image: url("https://wallpapers.com/images/hd/light-color-background-u5ajon1xr9puabyq.jpg"); */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+header {
+    background-color:#38B2A6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    color: #FFE66D; /* Add a hover effect with an accent color */
+}
+.about-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.profile-image {
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Set height to make it a circle */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 20px; /* Space between the image and text */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+#self{
+    font-size: 3.5rem; /* Increase size of paragraph text */
+    line-height: 1.6; /* Improve readability with line height */
+    color: #333;
+}
+#selfd{
+    color :  #38B2A6;
+}
+#student-info{
+    font-size: 1.5rem; /* Increase size of paragraph text */
+    margin-top: 0cm;
+    line-height: 0; /* Improve readability with line height */
+    color: #333;
+    /* margin: 0 !important; */
+}
+.about-text p {
+    margin: 0; 
+    line-height: 0.15;
+    margin-top: 2px;
+}
+
+
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+h2 {
+    border-bottom: 2px solid #4ECDC4;
+    color: #1A535C;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Skills with Colorful Progress Bars */
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.progress {
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+
+.progress-bar {
+    background-color: #38B2A6;
+    height: 100%;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Projects with Hover Effect and Accent Colors */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid #4ECDC4;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background-color: #FFE66D;
+}
+
+.project h3 {
+    color: #1A535C;
+}
+
+.project a {
+    color: #FF6B6B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #4ECDC4;
+}
+
+/* Achievements with Colored List Markers */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    position: relative;
+}
+
+ul li::before {
+    content: "✔"; /* Custom check mark for each list item */
+    color: #4ECDC4;
+    font-weight: bold;
+    position: absolute;
+    left: -30px;
+    font-size: 1.5em;
+}
+
+
+/* Footer */
+/* footer {
+    background-color: #1A535C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+} */
+
+/* Scroll Animations */
+.section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.section.visible {
+    opacity: 1;
+}
+footer {
+    background:  #38B2A6;
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 40px 0; /* Padding for spacing */
+}
+
+.footer-content {
+    max-width: 800px; /* Limit the width of content */
+    margin: auto; /* Center the content */
+}
+
+footer h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Font size for heading */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+footer p {
+    margin: 10px 0; /* Add spacing between paragraphs */
+}
+
+footer p a {
+    color: #FFE66D; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer p a:hover {
+    color: #fff; /* Change link color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-icons {
+    margin: 20px 0; /* Space around icons */
+}
+
+.social-icons a {
+    color: #FFE66D; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 1.5em; /* Size of icons */
+    transition: color 0.3s; /* Smooth color change */
+}
+
+.social-icons a:hover {
+    color: #FF6B6B; /* Change icon color on hover */
+}
+
