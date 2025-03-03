@@ -47,4 +47,3 @@ window.addEventListener('load', () => {
 
 // Initialize smooth scrolling
 smoothScroll();
-
