@@ -231,5 +231,124 @@ footer p a:hover {
     color: #FF6B6B; /* Change icon color on hover */
 }
 
+/* Career Gallery Section */
+#gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Flexbox for Proper Alignment */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Gallery Items */
+.gallery-item {
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background: #ffffff;
+    padding: 15px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Titles */
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 90%;
+    }
+}
+/* Organizational Leadership Box - Full Width */
+.organizational-box {
+    width: 90%; /* Increase width */
+    max-width: 1200px; /* Allow it to stretch more */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure Heading Stands Out */
+.organizational-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #1A535C;
+    text-align: center;
+}
+
+/* Style for List Items */
+.organizational-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.organizational-box li {
+    font-size: 1.4rem; /* Larger text */
+    padding: 12px 0;
+    line-height: 1.6;
+    position: relative;
+    text-align: left;
+}
+
+/* Custom Bullet Point */
+.organizational-box li::before {
+    content: "✔"; /* Green checkmark */
+    color: #38B2A6;
+    font-weight: bold;
+    position: absolute;
+    left: -35px;
+    font-size: 1.6em;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .organizational-box {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .organizational-box li {
+        font-size: 1.2rem; /* Adjust text size for small screens */
+    }
+}
 
 
